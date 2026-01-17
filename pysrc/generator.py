@@ -480,8 +480,7 @@ def generateXMLFile(agi):
 
       # VEX encoded instructions for which a {vex} specifier is required as there is a corresponding non-VEX encoded
       # instruction that the assembler might prefer
-      requiresVexSpecifier = (ii.is_vex() and (ii.extension not in ['AVX', 'AVX2', 'AVX2GATHER', 'AVXAES', 'F16C', 'FMA', 'GFNI', 'MSR_IMM', 'USER_MSR',
-                                                                    'VAES', 'VPCLMULQDQ']) and
+      requiresVexSpecifier = (ii.is_vex() and ii.extension in ['AVX_VNNI', 'AVX_IFMA', 'AVX_NE_CONVERT'] and
                               any(ii2 for ii2 in iclassDict[ii.iclass] if not ii2.is_vex()))
 
       vexvalidSet = findPossibleValuesForToken(ii.ipattern.bits, 'VEXVALID', {}, agi)

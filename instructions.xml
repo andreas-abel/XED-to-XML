@@ -306,41 +306,41 @@
     <instruction asm="TLBSYNC" category="SYSTEM" cpl="0" extension="AMD_INVLPGB" iclass="TLBSYNC" iform="TLBSYNC" isa-set="AMD_INVLPGB" opcode="0F01" string="TLBSYNC"/>
   </extension>
   <extension name="AMX_TILE">
-    <instruction asm="{vex} LDTILECFG" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="LDTILECFG" iform="LDTILECFG_MEM" isa-set="AMX_TILE" opcode="49" string="LDTILECFG_VEX (M512)" vex="1">
+    <instruction asm="LDTILECFG" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="LDTILECFG" iform="LDTILECFG_MEM" isa-set="AMX_TILE" opcode="49" string="LDTILECFG (M512)" vex="1">
       <operand idx="1" name="MEM0" r="1" type="mem" width="512" xtype="struct"/>
     </instruction>
-    <instruction asm="{vex} STTILECFG" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="STTILECFG" iform="STTILECFG_MEM" isa-set="AMX_TILE" opcode="49" string="STTILECFG_VEX (M512)" vex="1">
+    <instruction asm="STTILECFG" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="STTILECFG" iform="STTILECFG_MEM" isa-set="AMX_TILE" opcode="49" string="STTILECFG (M512)" vex="1">
       <operand idx="1" name="MEM0" type="mem" w="1" width="512" xtype="struct"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ0RST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0RST1" iform="T2RPNTLVWZ0RST1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F9" string="T2RPNTLVWZ0RST1_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ0" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0" iform="T2RPNTLVWZ0_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6E" string="T2RPNTLVWZ0 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ0RS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0RS" iform="T2RPNTLVWZ0RS_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F8" string="T2RPNTLVWZ0RS_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ0RS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0RS" iform="T2RPNTLVWZ0RS_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F8" string="T2RPNTLVWZ0RS (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ0T1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0T1" iform="T2RPNTLVWZ0T1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6F" string="T2RPNTLVWZ0T1_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ0RST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0RST1" iform="T2RPNTLVWZ0RST1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F9" string="T2RPNTLVWZ0RST1 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ0" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0" iform="T2RPNTLVWZ0_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6E" string="T2RPNTLVWZ0_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ0T1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ0T1" iform="T2RPNTLVWZ0T1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6F" string="T2RPNTLVWZ0T1 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ1RST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1RST1" iform="T2RPNTLVWZ1RST1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F9" string="T2RPNTLVWZ1RST1_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1" iform="T2RPNTLVWZ1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6E" string="T2RPNTLVWZ1 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ1RS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1RS" iform="T2RPNTLVWZ1RS_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F8" string="T2RPNTLVWZ1RS_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ1RS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1RS" iform="T2RPNTLVWZ1RS_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F8" string="T2RPNTLVWZ1RS (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ1T1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1T1" iform="T2RPNTLVWZ1T1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6F" string="T2RPNTLVWZ1T1_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ1RST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1RST1" iform="T2RPNTLVWZ1RST1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE_MOVRS" opcode="F9" string="T2RPNTLVWZ1RST1 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} T2RPNTLVWZ1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1" iform="T2RPNTLVWZ1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6E" string="T2RPNTLVWZ1_VEX (TMM, M0)" vex="1">
+    <instruction asm="T2RPNTLVWZ1T1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="T2RPNTLVWZ1T1" iform="T2RPNTLVWZ1T1_TMM2u16_MEMu16" isa-set="AMX_TRANSPOSE" opcode="6F" string="T2RPNTLVWZ1T1 (TMM, M0)" vex="1">
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
@@ -463,19 +463,19 @@
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="{vex} TILELOADDRST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDRST1" iform="TILELOADDRST1_TMMu32_MEMu32" isa-set="AMX_MOVRS" opcode="4A" string="TILELOADDRST1_VEX (TMM, M0)" vex="1">
+    <instruction asm="TILELOADD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADD" iform="TILELOADD_TMMu32_MEMu32" isa-set="AMX_TILE" opcode="4B" string="TILELOADD (TMM, M0)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} TILELOADDRS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDRS" iform="TILELOADDRS_TMMu32_MEMu32" isa-set="AMX_MOVRS" opcode="4A" string="TILELOADDRS_VEX (TMM, M0)" vex="1">
+    <instruction asm="TILELOADDRS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDRS" iform="TILELOADDRS_TMMu32_MEMu32" isa-set="AMX_MOVRS" opcode="4A" string="TILELOADDRS (TMM, M0)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} TILELOADDT1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDT1" iform="TILELOADDT1_TMMu32_MEMu32" isa-set="AMX_TILE" opcode="4B" string="TILELOADDT1_VEX (TMM, M0)" vex="1">
+    <instruction asm="TILELOADDRST1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDRST1" iform="TILELOADDRST1_TMMu32_MEMu32" isa-set="AMX_MOVRS" opcode="4A" string="TILELOADDRST1 (TMM, M0)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} TILELOADD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADD" iform="TILELOADD_TMMu32_MEMu32" isa-set="AMX_TILE" opcode="4B" string="TILELOADD_VEX (TMM, M0)" vex="1">
+    <instruction asm="TILELOADDT1" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILELOADDT1" iform="TILELOADDT1_TMMu32_MEMu32" isa-set="AMX_TILE" opcode="4B" string="TILELOADDT1 (TMM, M0)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u32"/>
     </instruction>
@@ -490,7 +490,7 @@
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
     <instruction asm="TILERELEASE" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILERELEASE" iform="TILERELEASE" isa-set="AMX_TILE" opcode="49" string="TILERELEASE" vex="1"/>
-    <instruction asm="{vex} TILESTORED" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILESTORED" iform="TILESTORED_MEMu32_TMMu32" isa-set="AMX_TILE" opcode="4B" string="TILESTORED_VEX (M0, TMM)" vex="1">
+    <instruction asm="TILESTORED" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILESTORED" iform="TILESTORED_MEMu32_TMMu32" isa-set="AMX_TILE" opcode="4B" string="TILESTORED (M0, TMM)" vex="1">
       <operand idx="1" name="MEM0" type="mem" w="1" width="0" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
@@ -99312,83 +99312,83 @@
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i1">K7,K6,K5,K4,K3,K2,K1,K0</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_MASKu8_AVX512" isa-set="AVX512DQ_KOPB" opcode="90" string="KMOVB_VEX (K, K)" vex="1">
+    <instruction asm="KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_MASKu8_AVX512" isa-set="AVX512DQ_KOPB" opcode="90" string="KMOVB (K, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="u8">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_MEMu8_AVX512" isa-set="AVX512DQ_KOPB" opcode="90" string="KMOVB_VEX (K, M8)" vex="1">
+    <instruction asm="KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_MEMu8_AVX512" isa-set="AVX512DQ_KOPB" opcode="90" string="KMOVB (K, M8)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" memory-prefix="byte ptr" name="MEM0" r="1" type="mem" width="8" xtype="u8"/>
     </instruction>
-    <instruction asm="{vex} KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_GPR32u32_AVX512" isa-set="AVX512DQ_KOPB" opcode="92" string="KMOVB_VEX (K, R32)" vex="1">
+    <instruction asm="KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MASKmskw_GPR32u32_AVX512" isa-set="AVX512DQ_KOPB" opcode="92" string="KMOVB (K, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MEMu8_MASKmskw_AVX512" isa-set="AVX512DQ_KOPB" opcode="91" string="KMOVB_VEX (M8, K)" vex="1">
+    <instruction asm="KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_MEMu8_MASKmskw_AVX512" isa-set="AVX512DQ_KOPB" opcode="91" string="KMOVB (M8, K)" vex="1">
       <operand idx="1" memory-prefix="byte ptr" name="MEM0" type="mem" w="1" width="8" xtype="u8"/>
       <operand idx="2" name="REG0" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_GPR32u32_MASKmskw_AVX512" isa-set="AVX512DQ_KOPB" opcode="93" string="KMOVB_VEX (R32, K)" vex="1">
+    <instruction asm="KMOVB" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVB" iform="KMOVB_GPR32u32_MASKmskw_AVX512" isa-set="AVX512DQ_KOPB" opcode="93" string="KMOVB (R32, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_MASKu32_AVX512" isa-set="AVX512BW_KOPD" opcode="90" string="KMOVD_VEX (K, K)" vex="1">
+    <instruction asm="KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_MASKu32_AVX512" isa-set="AVX512BW_KOPD" opcode="90" string="KMOVD (K, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="u32">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_MEMu32_AVX512" isa-set="AVX512BW_KOPD" opcode="90" string="KMOVD_VEX (K, M32)" vex="1">
+    <instruction asm="KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_MEMu32_AVX512" isa-set="AVX512BW_KOPD" opcode="90" string="KMOVD (K, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_GPR32u32_AVX512" isa-set="AVX512BW_KOPD" opcode="92" string="KMOVD_VEX (K, R32)" vex="1">
+    <instruction asm="KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MASKmskw_GPR32u32_AVX512" isa-set="AVX512BW_KOPD" opcode="92" string="KMOVD (K, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MEMu32_MASKmskw_AVX512" isa-set="AVX512BW_KOPD" opcode="91" string="KMOVD_VEX (M32, K)" vex="1">
+    <instruction asm="KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_MEMu32_MASKmskw_AVX512" isa-set="AVX512BW_KOPD" opcode="91" string="KMOVD (M32, K)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_GPR32u32_MASKmskw_AVX512" isa-set="AVX512BW_KOPD" opcode="93" string="KMOVD_VEX (R32, K)" vex="1">
+    <instruction asm="KMOVD" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVD" iform="KMOVD_GPR32u32_MASKmskw_AVX512" isa-set="AVX512BW_KOPD" opcode="93" string="KMOVD (R32, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_MASKu64_AVX512" isa-set="AVX512BW_KOPQ" opcode="90" string="KMOVQ_VEX (K, K)" vex="1">
+    <instruction asm="KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_MASKu64_AVX512" isa-set="AVX512BW_KOPQ" opcode="90" string="KMOVQ (K, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="u64">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_MEMu64_AVX512" isa-set="AVX512BW_KOPQ" opcode="90" string="KMOVQ_VEX (K, M64)" vex="1">
+    <instruction asm="KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_MEMu64_AVX512" isa-set="AVX512BW_KOPQ" opcode="90" string="KMOVQ (K, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="u64"/>
     </instruction>
-    <instruction asm="{vex} KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_GPR64u64_AVX512" isa-set="AVX512BW_KOPQ" opcode="92" string="KMOVQ_VEX (K, R64)" vex="1">
+    <instruction asm="KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MASKmskw_GPR64u64_AVX512" isa-set="AVX512BW_KOPQ" opcode="92" string="KMOVQ (K, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MEMu64_MASKmskw_AVX512" isa-set="AVX512BW_KOPQ" opcode="91" string="KMOVQ_VEX (M64, K)" vex="1">
+    <instruction asm="KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_MEMu64_MASKmskw_AVX512" isa-set="AVX512BW_KOPQ" opcode="91" string="KMOVQ (M64, K)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_GPR64u64_MASKmskw_AVX512" isa-set="AVX512BW_KOPQ" opcode="93" string="KMOVQ_VEX (R64, K)" vex="1">
+    <instruction asm="KMOVQ" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVQ" iform="KMOVQ_GPR64u64_MASKmskw_AVX512" isa-set="AVX512BW_KOPQ" opcode="93" string="KMOVQ (R64, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_MASKu16_AVX512" isa-set="AVX512F_KOPW" opcode="90" string="KMOVW_VEX (K, K)" vex="1">
+    <instruction asm="KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_MASKu16_AVX512" isa-set="AVX512F_KOPW" opcode="90" string="KMOVW (K, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="u16">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_MEMu16_AVX512" isa-set="AVX512F_KOPW" opcode="90" string="KMOVW_VEX (K, M16)" vex="1">
+    <instruction asm="KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_MEMu16_AVX512" isa-set="AVX512F_KOPW" opcode="90" string="KMOVW (K, M16)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" memory-prefix="word ptr" name="MEM0" r="1" type="mem" width="16" xtype="u16"/>
     </instruction>
-    <instruction asm="{vex} KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_GPR32u32_AVX512" isa-set="AVX512F_KOPW" opcode="92" string="KMOVW_VEX (K, R32)" vex="1">
+    <instruction asm="KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MASKmskw_GPR32u32_AVX512" isa-set="AVX512F_KOPW" opcode="92" string="KMOVW (K, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MEMu16_MASKmskw_AVX512" isa-set="AVX512F_KOPW" opcode="91" string="KMOVW_VEX (M16, K)" vex="1">
+    <instruction asm="KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_MEMu16_MASKmskw_AVX512" isa-set="AVX512F_KOPW" opcode="91" string="KMOVW (M16, K)" vex="1">
       <operand idx="1" memory-prefix="word ptr" name="MEM0" type="mem" w="1" width="16" xtype="u16"/>
       <operand idx="2" name="REG0" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
-    <instruction asm="{vex} KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_GPR32u32_MASKmskw_AVX512" isa-set="AVX512F_KOPW" opcode="93" string="KMOVW_VEX (R32, K)" vex="1">
+    <instruction asm="KMOVW" category="KMASK" cpl="3" extension="AVX512VEX" iclass="KMOVW" iform="KMOVW_GPR32u32_MASKmskw_AVX512" isa-set="AVX512F_KOPW" opcode="93" string="KMOVW (R32, K)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i1">K0,K1,K2,K3,K4,K5,K6,K7</operand>
     </instruction>
@@ -99815,244 +99815,244 @@
     </instruction>
   </extension>
   <extension name="AVX_VNNI_INT16">
-    <instruction asm="{vex} VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_XMMi32_XMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_XMMi32_XMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_XMMi32_XMM2i16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_XMMi32_XMM2i16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_YMMi32_YMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_YMMi32_YMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_YMMi32_YMM2i16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_YMMi32_YMM2i16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_XMMi32_XMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_XMMi32_XMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_XMMi32_XMM2i16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_XMMi32_XMM2i16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_YMMi32_YMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_YMMi32_YMM2i16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUD" iform="VPDPWSUD_YMMi32_YMM2i16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWSUD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWSUDS" iform="VPDPWSUDS_YMMi32_YMM2i16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWSUDS (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_XMMi32_XMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_XMMi32_XMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2i16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_XMMi32_XMM2u16_XMM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_XMMi32_XMM2u16_XMM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_YMMi32_YMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_YMMi32_YMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2i16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_YMMi32_YMM2u16_YMM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_YMMi32_YMM2u16_YMM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_XMMi32_XMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_XMMi32_XMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2i16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_XMMi32_XMM2u16_XMM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_XMMi32_XMM2u16_XMM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2i16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_YMMi32_YMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_YMMi32_YMM2u16_MEM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2i16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUSD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSD" iform="VPDPWUSD_YMMi32_YMM2u16_YMM2i16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUSD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWUSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUSDS" iform="VPDPWUSDS_YMMi32_YMM2u16_YMM2i16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUSDS (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2i16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_XMMu32_XMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_XMMu32_XMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_XMMu32_XMM2u16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_XMMu32_XMM2u16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_YMMu32_YMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_YMMu32_YMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_YMMu32_YMM2u16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_YMMu32_YMM2u16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_XMMu32_XMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_XMMu32_XMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_XMMu32_XMM2u16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_XMMu32_XMM2u16_XMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="2u16">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_YMMu32_YMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_YMMu32_YMM2u16_MEM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="2u16"/>
     </instruction>
-    <instruction asm="{vex} VPDPWUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUD" iform="VPDPWUUD_YMMu32_YMM2u16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D2" string="VPDPWUUD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPWUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT16" iclass="VPDPWUUDS" iform="VPDPWUUDS_YMMu32_YMM2u16_YMM2u16" isa-set="AVX_VNNI_INT16" opcode="D3" string="VPDPWUUDS (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="2u16">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
   </extension>
   <extension name="AVX_VNNI_INT8">
-    <instruction asm="{vex} VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_XMMi32_XMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_XMMi32_XMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4i8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_XMMi32_XMM4i8_XMM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_XMMi32_XMM4i8_XMM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_YMMi32_YMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_YMMi32_YMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4i8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_YMMi32_YMM4i8_YMM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_YMMi32_YMM4i8_YMM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_XMMi32_XMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_XMMi32_XMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4i8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_XMMi32_XMM4i8_XMM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_XMMi32_XMM4i8_XMM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_YMMi32_YMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_YMMi32_YMM4i8_MEM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4i8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSSD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSD" iform="VPDPBSSD_YMMi32_YMM4i8_YMM4i8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSSD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPBSSDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSSDS" iform="VPDPBSSDS_YMMi32_YMM4i8_YMM4i8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSSDS (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_XMMi32_XMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_XMMi32_XMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_XMMi32_XMM4i8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_XMMi32_XMM4i8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_YMMi32_YMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_YMMi32_YMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_YMMi32_YMM4i8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS_VEX (YMM, YMM, YMM)" vex="1">
-      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
-      <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
-    </instruction>
-    <instruction asm="{vex} VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_XMMi32_XMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD_VEX (XMM, XMM, M128)" vex="1">
-      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
-      <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4u8"/>
-    </instruction>
-    <instruction asm="{vex} VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_XMMi32_XMM4i8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD_VEX (XMM, XMM, XMM)" vex="1">
-      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
-      <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
-    </instruction>
-    <instruction asm="{vex} VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_YMMi32_YMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD_VEX (YMM, YMM, M256)" vex="1">
-      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
-      <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4u8"/>
-    </instruction>
-    <instruction asm="{vex} VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_YMMi32_YMM4i8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPBSUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUD" iform="VPDPBSUD_YMMi32_YMM4i8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBSUD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_XMMu32_XMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_XMMi32_XMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS (XMM, XMM, M128)" vex="1">
+      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
+      <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4u8"/>
+    </instruction>
+    <instruction asm="VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_XMMi32_XMM4i8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS (XMM, XMM, XMM)" vex="1">
+      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="i32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4i8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
+      <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
+    </instruction>
+    <instruction asm="VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_YMMi32_YMM4i8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS (YMM, YMM, M256)" vex="1">
+      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
+      <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4u8"/>
+    </instruction>
+    <instruction asm="VPDPBSUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBSUDS" iform="VPDPBSUDS_YMMi32_YMM4i8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBSUDS (YMM, YMM, YMM)" vex="1">
+      <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="i32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4i8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
+      <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
+    </instruction>
+    <instruction asm="VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_XMMu32_XMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_XMMu32_XMM4u8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_XMMu32_XMM4u8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_YMMu32_YMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_YMMu32_YMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_YMMu32_YMM4u8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_YMMu32_YMM4u8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_XMMu32_XMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_XMMu32_XMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_XMMu32_XMM4u8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_XMMu32_XMM4u8_XMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="4u8">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_YMMu32_YMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_YMMu32_YMM4u8_MEM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="4u8"/>
     </instruction>
-    <instruction asm="{vex} VPDPBUUD" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUD" iform="VPDPBUUD_YMMu32_YMM4u8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="50" string="VPDPBUUD_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VPDPBUUDS" category="VEX" cpl="3" extension="AVX_VNNI_INT8" iclass="VPDPBUUDS" iform="VPDPBUUDS_YMMu32_YMM4u8_YMM4u8" isa-set="AVX_VNNI_INT8" opcode="51" string="VPDPBUUDS (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="4u8">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
@@ -108246,110 +108246,110 @@
     </instruction>
   </extension>
   <extension name="BMI1">
-    <instruction asm="{vex} ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR32d_GPR32d_MEMd" isa-set="BMI1" opcode="F2" string="ANDN_VEX (R32, R32, M32)" vex="1">
+    <instruction asm="ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR32d_GPR32d_MEMd" isa-set="BMI1" opcode="F2" string="ANDN (R32, R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR32d_GPR32d_GPR32d" isa-set="BMI1" opcode="F2" string="ANDN_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR32d_GPR32d_GPR32d" isa-set="BMI1" opcode="F2" string="ANDN (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR64q_GPR64q_MEMq" isa-set="BMI1" opcode="F2" string="ANDN_VEX (R64, R64, M64)" vex="1">
+    <instruction asm="ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR64q_GPR64q_MEMq" isa-set="BMI1" opcode="F2" string="ANDN (R64, R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR64q_GPR64q_GPR64q" isa-set="BMI1" opcode="F2" string="ANDN_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="ANDN" category="BMI1" cpl="3" extension="BMI1" iclass="ANDN" iform="ANDN_GPR64q_GPR64q_GPR64q" isa-set="BMI1" opcode="F2" string="ANDN (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR32d_MEMd_GPR32d" isa-set="BMI1" opcode="F7" string="BEXTR_VEX (R32, M32, R32)" vex="1">
+    <instruction asm="BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR32d_MEMd_GPR32d" isa-set="BMI1" opcode="F7" string="BEXTR (R32, M32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="undef" flag_OF="undef" flag_PF="undef" flag_SF="undef" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR32d_GPR32d_GPR32d" isa-set="BMI1" opcode="F7" string="BEXTR_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR32d_GPR32d_GPR32d" isa-set="BMI1" opcode="F7" string="BEXTR (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="undef" flag_OF="undef" flag_PF="undef" flag_SF="undef" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR64q_MEMq_GPR64q" isa-set="BMI1" opcode="F7" string="BEXTR_VEX (R64, M64, R64)" vex="1">
+    <instruction asm="BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR64q_MEMq_GPR64q" isa-set="BMI1" opcode="F7" string="BEXTR (R64, M64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="undef" flag_OF="undef" flag_PF="undef" flag_SF="undef" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR64q_GPR64q_GPR64q" isa-set="BMI1" opcode="F7" string="BEXTR_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="BEXTR" category="BMI1" cpl="3" extension="BMI1" iclass="BEXTR" iform="BEXTR_GPR64q_GPR64q_GPR64q" isa-set="BMI1" opcode="F7" string="BEXTR (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="undef" flag_OF="undef" flag_PF="undef" flag_SF="undef" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSI_VEX (R32, M32)" vex="1">
+    <instruction asm="BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSI (R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSI_VEX (R32, R32)" vex="1">
+    <instruction asm="BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSI (R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSI_VEX (R64, M64)" vex="1">
+    <instruction asm="BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSI (R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSI_VEX (R64, R64)" vex="1">
+    <instruction asm="BLSI" category="BMI1" cpl="3" extension="BMI1" iclass="BLSI" iform="BLSI_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSI (R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSMSK_VEX (R32, M32)" vex="1">
+    <instruction asm="BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSMSK (R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSMSK_VEX (R32, R32)" vex="1">
+    <instruction asm="BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSMSK (R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSMSK_VEX (R64, M64)" vex="1">
+    <instruction asm="BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSMSK (R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSMSK_VEX (R64, R64)" vex="1">
+    <instruction asm="BLSMSK" category="BMI1" cpl="3" extension="BMI1" iclass="BLSMSK" iform="BLSMSK_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSMSK (R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSR_VEX (R32, M32)" vex="1">
+    <instruction asm="BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR32d_MEMd" isa-set="BMI1" opcode="F3" string="BLSR (R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSR_VEX (R32, R32)" vex="1">
+    <instruction asm="BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR32d_GPR32d" isa-set="BMI1" opcode="F3" string="BLSR (R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSR_VEX (R64, M64)" vex="1">
+    <instruction asm="BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR64q_MEMq" isa-set="BMI1" opcode="F3" string="BLSR (R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG1" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSR_VEX (R64, R64)" vex="1">
+    <instruction asm="BLSR" category="BMI1" cpl="3" extension="BMI1" iclass="BLSR" iform="BLSR_GPR64q_GPR64q" isa-set="BMI1" opcode="F3" string="BLSR (R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="3" name="REG2" suppressed="1" type="flags" w="1"/>
@@ -108386,170 +108386,170 @@
     </instruction>
   </extension>
   <extension name="BMI2">
-    <instruction asm="{vex} BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F5" string="BZHI_VEX (R32, M32, R32)" vex="1">
+    <instruction asm="BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F5" string="BZHI (R32, M32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="BZHI_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="BZHI (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F5" string="BZHI_VEX (R64, M64, R64)" vex="1">
+    <instruction asm="BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F5" string="BZHI (R64, M64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="BZHI_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="BZHI" category="BMI2" cpl="3" extension="BMI2" iclass="BZHI" iform="BZHI_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="BZHI (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="undef" flag_CF="w" flag_OF="w" flag_PF="undef" flag_SF="w" flag_ZF="w" idx="4" name="REG3" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F6" string="MULX_VEX (R32, R32, M32)" vex="1">
+    <instruction asm="MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F6" string="MULX (R32, R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="4" name="REG2" r="1" suppressed="1" type="reg">EDX</operand>
     </instruction>
-    <instruction asm="{vex} MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F6" string="MULX_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F6" string="MULX (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="4" name="REG3" r="1" suppressed="1" type="reg">EDX</operand>
     </instruction>
-    <instruction asm="{vex} MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F6" string="MULX_VEX (R64, R64, M64)" vex="1">
+    <instruction asm="MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F6" string="MULX (R64, R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="4" name="REG2" r="1" suppressed="1" type="reg">RDX</operand>
     </instruction>
-    <instruction asm="{vex} MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F6" string="MULX_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="MULX" category="BMI2" cpl="3" extension="BMI2" iclass="MULX" iform="MULX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F6" string="MULX (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="4" name="REG3" r="1" suppressed="1" type="reg">RDX</operand>
     </instruction>
-    <instruction asm="{vex} PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F5" string="PDEP_VEX (R32, R32, M32)" vex="1">
+    <instruction asm="PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F5" string="PDEP (R32, R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
     </instruction>
-    <instruction asm="{vex} PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="PDEP_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="PDEP (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F5" string="PDEP_VEX (R64, R64, M64)" vex="1">
+    <instruction asm="PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F5" string="PDEP (R64, R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
     </instruction>
-    <instruction asm="{vex} PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="PDEP_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="PDEP" category="BMI2" cpl="3" extension="BMI2" iclass="PDEP" iform="PDEP_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="PDEP (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F5" string="PEXT_VEX (R32, R32, M32)" vex="1">
+    <instruction asm="PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR32d_GPR32d_MEMd" isa-set="BMI2" opcode="F5" string="PEXT (R32, R32, M32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
     </instruction>
-    <instruction asm="{vex} PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="PEXT_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F5" string="PEXT (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F5" string="PEXT_VEX (R64, R64, M64)" vex="1">
+    <instruction asm="PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR64q_GPR64q_MEMq" isa-set="BMI2" opcode="F5" string="PEXT (R64, R64, M64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
     </instruction>
-    <instruction asm="{vex} PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="PEXT_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="PEXT" category="BMI2" cpl="3" extension="BMI2" iclass="PEXT" iform="PEXT_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F5" string="PEXT (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR32d_MEMd_IMMb" isa-set="BMI2" opcode="F0" string="RORX_VEX (R32, M32, I8)" vex="1">
+    <instruction asm="RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR32d_MEMd_IMMb" isa-set="BMI2" opcode="F0" string="RORX (R32, M32, I8)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="3" name="IMM0" r="1" type="imm" width="8"/>
     </instruction>
-    <instruction asm="{vex} RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR32d_GPR32d_IMMb" isa-set="BMI2" opcode="F0" string="RORX_VEX (R32, R32, I8)" vex="1">
+    <instruction asm="RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR32d_GPR32d_IMMb" isa-set="BMI2" opcode="F0" string="RORX (R32, R32, I8)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="IMM0" r="1" type="imm" width="8"/>
     </instruction>
-    <instruction asm="{vex} RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR64q_MEMq_IMMb" isa-set="BMI2" opcode="F0" string="RORX_VEX (R64, M64, I8)" vex="1">
+    <instruction asm="RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR64q_MEMq_IMMb" isa-set="BMI2" opcode="F0" string="RORX (R64, M64, I8)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="3" name="IMM0" r="1" type="imm" width="8"/>
     </instruction>
-    <instruction asm="{vex} RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR64q_GPR64q_IMMb" isa-set="BMI2" opcode="F0" string="RORX_VEX (R64, R64, I8)" vex="1">
+    <instruction asm="RORX" category="BMI2" cpl="3" extension="BMI2" iclass="RORX" iform="RORX_GPR64q_GPR64q_IMMb" isa-set="BMI2" opcode="F0" string="RORX (R64, R64, I8)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="IMM0" r="1" type="imm" width="8"/>
     </instruction>
-    <instruction asm="{vex} SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SARX_VEX (R32, M32, R32)" vex="1">
+    <instruction asm="SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SARX (R32, M32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SARX_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SARX (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SARX_VEX (R64, M64, R64)" vex="1">
+    <instruction asm="SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SARX (R64, M64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SARX_VEX (R64, R64, R64)" vex="1">
-      <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
-      <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
-    </instruction>
-    <instruction asm="{vex} SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SHLX_VEX (R32, M32, R32)" vex="1">
-      <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
-      <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
-      <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
-    </instruction>
-    <instruction asm="{vex} SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SHLX_VEX (R32, R32, R32)" vex="1">
-      <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
-      <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
-      <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
-    </instruction>
-    <instruction asm="{vex} SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SHLX_VEX (R64, M64, R64)" vex="1">
-      <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
-      <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
-      <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
-    </instruction>
-    <instruction asm="{vex} SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SHLX_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="SARX" category="BMI2" cpl="3" extension="BMI2" iclass="SARX" iform="SARX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SARX (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SHRX_VEX (R32, M32, R32)" vex="1">
+    <instruction asm="SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SHLX (R32, M32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SHRX_VEX (R32, R32, R32)" vex="1">
+    <instruction asm="SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SHLX (R32, R32, R32)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="{vex} SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SHRX_VEX (R64, M64, R64)" vex="1">
+    <instruction asm="SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SHLX (R64, M64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
     </instruction>
-    <instruction asm="{vex} SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SHRX_VEX (R64, R64, R64)" vex="1">
+    <instruction asm="SHLX" category="BMI2" cpl="3" extension="BMI2" iclass="SHLX" iform="SHLX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SHLX (R64, R64, R64)" vex="1">
+      <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
+      <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
+    </instruction>
+    <instruction asm="SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR32d_MEMd_GPR32d" isa-set="BMI2" opcode="F7" string="SHRX (R32, M32, R32)" vex="1">
+      <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
+      <operand idx="2" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" width="32" xtype="i32"/>
+      <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
+    </instruction>
+    <instruction asm="SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR32d_GPR32d_GPR32d" isa-set="BMI2" opcode="F7" string="SHRX (R32, R32, R32)" vex="1">
+      <operand idx="1" name="REG0" type="reg" w="1" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
+      <operand idx="2" name="REG1" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
+      <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="i32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
+    </instruction>
+    <instruction asm="SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR64q_MEMq_GPR64q" isa-set="BMI2" opcode="F7" string="SHRX (R64, M64, R64)" vex="1">
+      <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
+      <operand idx="2" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" width="64" xtype="i64"/>
+      <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
+    </instruction>
+    <instruction asm="SHRX" category="BMI2" cpl="3" extension="BMI2" iclass="SHRX" iform="SHRX_GPR64q_GPR64q_GPR64q" isa-set="BMI2" opcode="F7" string="SHRX (R64, R64, R64)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
@@ -108628,193 +108628,193 @@
     </instruction>
   </extension>
   <extension name="CMPCCXADD">
-    <instruction asm="{vex} CMPBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBEXADD" iform="CMPBEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E6" string="CMPBEXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBEXADD" iform="CMPBEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E6" string="CMPBEXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBEXADD" iform="CMPBEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E6" string="CMPBEXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBEXADD" iform="CMPBEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E6" string="CMPBEXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBXADD" iform="CMPBXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E2" string="CMPBXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBXADD" iform="CMPBXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E2" string="CMPBXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBXADD" iform="CMPBXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E2" string="CMPBXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPBXADD" iform="CMPBXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E2" string="CMPBXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLEXADD" iform="CMPLEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EE" string="CMPLEXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLEXADD" iform="CMPLEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EE" string="CMPLEXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLEXADD" iform="CMPLEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EE" string="CMPLEXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLEXADD" iform="CMPLEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EE" string="CMPLEXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLXADD" iform="CMPLXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EC" string="CMPLXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLXADD" iform="CMPLXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EC" string="CMPLXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLXADD" iform="CMPLXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EC" string="CMPLXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPLXADD" iform="CMPLXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EC" string="CMPLXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBEXADD" iform="CMPNBEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E7" string="CMPNBEXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBEXADD" iform="CMPNBEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E7" string="CMPNBEXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBEXADD" iform="CMPNBEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E7" string="CMPNBEXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNBEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBEXADD" iform="CMPNBEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E7" string="CMPNBEXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBXADD" iform="CMPNBXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E3" string="CMPNBXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBXADD" iform="CMPNBXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E3" string="CMPNBXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBXADD" iform="CMPNBXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E3" string="CMPNBXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNBXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNBXADD" iform="CMPNBXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E3" string="CMPNBXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLEXADD" iform="CMPNLEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EF" string="CMPNLEXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLEXADD" iform="CMPNLEXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EF" string="CMPNLEXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLEXADD" iform="CMPNLEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EF" string="CMPNLEXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNLEXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLEXADD" iform="CMPNLEXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EF" string="CMPNLEXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLXADD" iform="CMPNLXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="ED" string="CMPNLXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLXADD" iform="CMPNLXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="ED" string="CMPNLXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLXADD" iform="CMPNLXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="ED" string="CMPNLXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNLXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNLXADD" iform="CMPNLXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="ED" string="CMPNLXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNOXADD" iform="CMPNOXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E1" string="CMPNOXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNOXADD" iform="CMPNOXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E1" string="CMPNOXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNOXADD" iform="CMPNOXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E1" string="CMPNOXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNOXADD" iform="CMPNOXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E1" string="CMPNOXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNPXADD" iform="CMPNPXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EB" string="CMPNPXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNPXADD" iform="CMPNPXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EB" string="CMPNPXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNPXADD" iform="CMPNPXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EB" string="CMPNPXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNPXADD" iform="CMPNPXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EB" string="CMPNPXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNSXADD" iform="CMPNSXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E9" string="CMPNSXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNSXADD" iform="CMPNSXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E9" string="CMPNSXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNSXADD" iform="CMPNSXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E9" string="CMPNSXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNSXADD" iform="CMPNSXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E9" string="CMPNSXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNZXADD" iform="CMPNZXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E5" string="CMPNZXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPNZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNZXADD" iform="CMPNZXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E5" string="CMPNZXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPNZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNZXADD" iform="CMPNZXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E5" string="CMPNZXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPNZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPNZXADD" iform="CMPNZXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E5" string="CMPNZXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPOXADD" iform="CMPOXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E0" string="CMPOXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPOXADD" iform="CMPOXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E0" string="CMPOXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPOXADD" iform="CMPOXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E0" string="CMPOXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPOXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPOXADD" iform="CMPOXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E0" string="CMPOXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPPXADD" iform="CMPPXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EA" string="CMPPXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPPXADD" iform="CMPPXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="EA" string="CMPPXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPPXADD" iform="CMPPXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EA" string="CMPPXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPPXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPPXADD" iform="CMPPXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="EA" string="CMPPXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPSXADD" iform="CMPSXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E8" string="CMPSXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPSXADD" iform="CMPSXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E8" string="CMPSXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPSXADD" iform="CMPSXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E8" string="CMPSXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPSXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPSXADD" iform="CMPSXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E8" string="CMPSXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPZXADD" iform="CMPZXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E4" string="CMPZXADD_VEX (M32, R32, R32)" vex="1">
+    <instruction asm="CMPZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPZXADD" iform="CMPZXADD_MEMu32_GPR32u32_GPR32u32" isa-set="CMPCCXADD" opcode="E4" string="CMPZXADD (M32, R32, R32)" vex="1">
       <operand idx="1" memory-prefix="dword ptr" name="MEM0" r="1" type="mem" w="1" width="32" xtype="u32"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
       <operand flag_AF="w" flag_CF="w" flag_OF="w" flag_PF="w" flag_SF="w" flag_ZF="w" idx="4" name="REG2" suppressed="1" type="flags" w="1"/>
     </instruction>
-    <instruction asm="{vex} CMPZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPZXADD" iform="CMPZXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E4" string="CMPZXADD_VEX (M64, R64, R64)" vex="1">
+    <instruction asm="CMPZXADD" category="VEX" cpl="3" extension="CMPCCXADD" iclass="CMPZXADD" iform="CMPZXADD_MEMu64_GPR64u64_GPR64u64" isa-set="CMPCCXADD" opcode="E4" string="CMPZXADD (M64, R64, R64)" vex="1">
       <operand idx="1" memory-prefix="qword ptr" name="MEM0" r="1" type="mem" w="1" width="64" xtype="u64"/>
       <operand idx="2" name="REG0" r="1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
       <operand idx="3" name="REG1" r="1" type="reg" width="64" xtype="u64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15</operand>
@@ -112057,42 +112057,42 @@
     </instruction>
   </extension>
   <extension name="SM4">
-    <instruction asm="{vex} VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_XMMu32_XMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_XMMu32_XMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4 (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_XMMu32_XMMu32_XMMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_XMMu32_XMMu32_XMMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4 (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_YMMu32_YMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_YMMu32_YMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4 (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_YMMu32_YMMu32_YMMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VSM4KEY4" category="VEX" cpl="3" extension="SM4" iclass="VSM4KEY4" iform="VSM4KEY4_YMMu32_YMMu32_YMMu32" isa-set="SM4" opcode="DA" string="VSM4KEY4 (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
     </instruction>
-    <instruction asm="{vex} VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_XMMu32_XMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4_VEX (XMM, XMM, M128)" vex="1">
+    <instruction asm="VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_XMMu32_XMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4 (XMM, XMM, M128)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" memory-prefix="xmmword ptr" name="MEM0" r="1" type="mem" width="128" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_XMMu32_XMMu32_XMMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4_VEX (XMM, XMM, XMM)" vex="1">
+    <instruction asm="VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_XMMu32_XMMu32_XMMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4 (XMM, XMM, XMM)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="128" xtype="u32">XMM0,XMM1,XMM2,XMM3,XMM4,XMM5,XMM6,XMM7,XMM8,XMM9,XMM10,XMM11,XMM12,XMM13,XMM14,XMM15</operand>
     </instruction>
-    <instruction asm="{vex} VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_YMMu32_YMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4_VEX (YMM, YMM, M256)" vex="1">
+    <instruction asm="VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_YMMu32_YMMu32_MEMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4 (YMM, YMM, M256)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" memory-prefix="ymmword ptr" name="MEM0" r="1" type="mem" width="256" xtype="u32"/>
     </instruction>
-    <instruction asm="{vex} VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_YMMu32_YMMu32_YMMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4_VEX (YMM, YMM, YMM)" vex="1">
+    <instruction asm="VSM4RNDS4" category="VEX" cpl="3" extension="SM4" iclass="VSM4RNDS4" iform="VSM4RNDS4_YMMu32_YMMu32_YMMu32" isa-set="SM4" opcode="DA" string="VSM4RNDS4 (YMM, YMM, YMM)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="256" xtype="u32">YMM0,YMM1,YMM2,YMM3,YMM4,YMM5,YMM6,YMM7,YMM8,YMM9,YMM10,YMM11,YMM12,YMM13,YMM14,YMM15</operand>
