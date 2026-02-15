@@ -718,6 +718,8 @@ def generateXMLFile(agi):
                                     XMLInstr.attrib['mxcsr'] = '1'
                                  if 'NO_SRC_DEST_MATCH' in ii.attributes:
                                     XMLInstr.attrib['no_src_dest_match'] = '1'
+                                 if 'NO_REG_MATCH' in ii.attributes:
+                                    XMLInstr.attrib['no_reg_match'] = '1'
 
                               if ii.iform_enum.endswith('_ZU'):
                                  stringSuffix += '_ZU'

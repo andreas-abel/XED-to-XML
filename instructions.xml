@@ -344,17 +344,17 @@
       <operand idx="1" multireg="2" name="REG0" type="reg" w="1" width="0" xtype="2u16">TMM0,TMM2,TMM4,TMM6</operand>
       <operand idx="2" name="MEM0" r="1" type="mem" width="0" xtype="u16"/>
     </instruction>
-    <instruction asm="TCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCMMIMFP16PS" iform="TCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_COMPLEX" opcode="6C" string="TCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCMMIMFP16PS" iform="TCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_COMPLEX" no_reg_match="1" opcode="6C" string="TCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TCMMRLFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCMMRLFP16PS" iform="TCMMRLFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_COMPLEX" opcode="6C" string="TCMMRLFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TCMMRLFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCMMRLFP16PS" iform="TCMMRLFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_COMPLEX" no_reg_match="1" opcode="6C" string="TCMMRLFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TCONJTCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCONJTCMMIMFP16PS" iform="TCONJTCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" opcode="6B" string="TCONJTCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TCONJTCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TCONJTCMMIMFP16PS" iform="TCONJTCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" no_reg_match="1" opcode="6B" string="TCONJTCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
@@ -413,52 +413,52 @@
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="32" xtype="u32">EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI,R8D,R9D,R10D,R11D,R12D,R13D,R14D,R15D</operand>
     </instruction>
-    <instruction asm="TDPBF16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBF16PS" iform="TDPBF16PS_TMMf32_TMM2bf16_TMM2bf16" isa-set="AMX_BF16" opcode="5C" string="TDPBF16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBF16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBF16PS" iform="TDPBF16PS_TMMf32_TMM2bf16_TMM2bf16" isa-set="AMX_BF16" no_reg_match="1" opcode="5C" string="TDPBF16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2bf16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2bf16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBF8PS" iform="TDPBF8PS_TMMf32_TMM4bf8_TMM4bf8" isa-set="AMX_FP8" opcode="FD" string="TDPBF8PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBF8PS" iform="TDPBF8PS_TMMf32_TMM4bf8_TMM4bf8" isa-set="AMX_FP8" no_reg_match="1" opcode="FD" string="TDPBF8PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4bf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4bf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBHF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBHF8PS" iform="TDPBHF8PS_TMMf32_TMM4bf8_TMM4hf8" isa-set="AMX_FP8" opcode="FD" string="TDPBHF8PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBHF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBHF8PS" iform="TDPBHF8PS_TMMf32_TMM4bf8_TMM4hf8" isa-set="AMX_FP8" no_reg_match="1" opcode="FD" string="TDPBHF8PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4bf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBSSD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBSSD" iform="TDPBSSD_TMMi32_TMM4i8_TMM4i8" isa-set="AMX_INT8" opcode="5E" string="TDPBSSD (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBSSD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBSSD" iform="TDPBSSD_TMMi32_TMM4i8_TMM4i8" isa-set="AMX_INT8" no_reg_match="1" opcode="5E" string="TDPBSSD (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="i32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4i8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4i8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBSUD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBSUD" iform="TDPBSUD_TMMi32_TMM4i8_TMM4u8" isa-set="AMX_INT8" opcode="5E" string="TDPBSUD (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBSUD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBSUD" iform="TDPBSUD_TMMi32_TMM4i8_TMM4u8" isa-set="AMX_INT8" no_reg_match="1" opcode="5E" string="TDPBSUD (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="i32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4i8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4u8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBUSD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBUSD" iform="TDPBUSD_TMMi32_TMM4u8_TMM4i8" isa-set="AMX_INT8" opcode="5E" string="TDPBUSD (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBUSD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBUSD" iform="TDPBUSD_TMMi32_TMM4u8_TMM4i8" isa-set="AMX_INT8" no_reg_match="1" opcode="5E" string="TDPBUSD (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="i32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4u8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4i8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPBUUD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBUUD" iform="TDPBUUD_TMMu32_TMM4u8_TMM4u8" isa-set="AMX_INT8" opcode="5E" string="TDPBUUD (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPBUUD" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPBUUD" iform="TDPBUUD_TMMu32_TMM4u8_TMM4u8" isa-set="AMX_INT8" no_reg_match="1" opcode="5E" string="TDPBUUD (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4u8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4u8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPFP16PS" iform="TDPFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_FP16" opcode="5C" string="TDPFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPFP16PS" iform="TDPFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_FP16" no_reg_match="1" opcode="5C" string="TDPFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPHBF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPHBF8PS" iform="TDPHBF8PS_TMMf32_TMM4hf8_TMM4bf8" isa-set="AMX_FP8" opcode="FD" string="TDPHBF8PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPHBF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPHBF8PS" iform="TDPHBF8PS_TMMf32_TMM4hf8_TMM4bf8" isa-set="AMX_FP8" no_reg_match="1" opcode="FD" string="TDPHBF8PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4bf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TDPHF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPHF8PS" iform="TDPHF8PS_TMMf32_TMM4hf8_TMM4hf8" isa-set="AMX_FP8" opcode="FD" string="TDPHF8PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TDPHF8PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TDPHF8PS" iform="TDPHF8PS_TMMf32_TMM4hf8_TMM4hf8" isa-set="AMX_FP8" no_reg_match="1" opcode="FD" string="TDPHF8PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="4hf8">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
@@ -497,32 +497,32 @@
     <instruction asm="TILEZERO" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TILEZERO" iform="TILEZERO_TMMu32" isa-set="AMX_TILE" opcode="49" string="TILEZERO (TMM)" vex="1">
       <operand idx="1" name="REG0" type="reg" w="1" width="0" xtype="u32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TMMULTF32PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TMMULTF32PS" iform="TMMULTF32PS_TMMf32_TMMf32_TMMf32" isa-set="AMX_TF32" opcode="48" string="TMMULTF32PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TMMULTF32PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TMMULTF32PS" iform="TMMULTF32PS_TMMf32_TMMf32_TMMf32" isa-set="AMX_TF32" no_reg_match="1" opcode="48" string="TMMULTF32PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TTCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTCMMIMFP16PS" iform="TTCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" opcode="6B" string="TTCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TTCMMIMFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTCMMIMFP16PS" iform="TTCMMIMFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" no_reg_match="1" opcode="6B" string="TTCMMIMFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TTCMMRLFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTCMMRLFP16PS" iform="TTCMMRLFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" opcode="6B" string="TTCMMRLFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TTCMMRLFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTCMMRLFP16PS" iform="TTCMMRLFP16PS_TMMf32_TMM2f16_TMM2f16" isa-set="AMX_TRANSPOSE_COMPLEX" no_reg_match="1" opcode="6B" string="TTCMMRLFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="2f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TTDPBF16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTDPBF16PS" iform="TTDPBF16PS_TMMf32_TMMbf16_TMMbf16" isa-set="AMX_TRANSPOSE_BF16" opcode="6C" string="TTDPBF16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TTDPBF16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTDPBF16PS" iform="TTDPBF16PS_TMMf32_TMMbf16_TMMbf16" isa-set="AMX_TRANSPOSE_BF16" no_reg_match="1" opcode="6C" string="TTDPBF16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="bf16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="bf16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TTDPFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTDPFP16PS" iform="TTDPFP16PS_TMMf32_TMMf16_TMMf16" isa-set="AMX_TRANSPOSE_FP16" opcode="6C" string="TTDPFP16PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TTDPFP16PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTDPFP16PS" iform="TTDPFP16PS_TMMf32_TMMf16_TMMf16" isa-set="AMX_TRANSPOSE_FP16" no_reg_match="1" opcode="6C" string="TTDPFP16PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="f16">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
     </instruction>
-    <instruction asm="TTMMULTF32PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTMMULTF32PS" iform="TTMMULTF32PS_TMMf32_TMMf32_TMMf32" isa-set="AMX_TRANSPOSE_TF32" opcode="48" string="TTMMULTF32PS (TMM, TMM, TMM)" vex="1">
+    <instruction asm="TTMMULTF32PS" category="AMX_TILE" cpl="3" extension="AMX_TILE" iclass="TTMMULTF32PS" iform="TTMMULTF32PS_TMMf32_TMMf32_TMMf32" isa-set="AMX_TRANSPOSE_TF32" no_reg_match="1" opcode="48" string="TTMMULTF32PS (TMM, TMM, TMM)" vex="1">
       <operand idx="1" name="REG0" r="1" type="reg" w="1" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="2" name="REG1" r="1" type="reg" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="0" xtype="f32">TMM0,TMM1,TMM2,TMM3,TMM4,TMM5,TMM6,TMM7</operand>
@@ -10189,13 +10189,13 @@
       <operand idx="2" name="REG1" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
       <operand idx="3" name="REG2" r="1" type="reg" width="64" xtype="i64">RAX,RCX,RDX,RBX,RSP,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
     </instruction>
-    <instruction asm="POP2" category="POP" cpl="3" eosz="2" evex="1" extension="APXEVEX" iclass="POP2" iform="POP2_GPR64u64_GPR64u64_APX" isa-set="APX_F" opcode="8F" string="POP2 (R64, R64)">
+    <instruction asm="POP2" category="POP" cpl="3" eosz="2" evex="1" extension="APXEVEX" iclass="POP2" iform="POP2_GPR64u64_GPR64u64_APX" isa-set="APX_F" no_reg_match="1" opcode="8F" string="POP2 (R64, R64)">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
       <operand idx="3" name="REG2" r="1" suppressed="1" type="reg" w="1" width="64">RSP</operand>
       <operand base="RSP" idx="4" memory-prefix="qword ptr" name="MEM0" r="1" seg="SS" suppressed="1" type="mem" width="64" xtype="int"/>
     </instruction>
-    <instruction asm="POP2P" category="POP" cpl="3" eosz="3" evex="1" extension="APXEVEX" iclass="POP2P" iform="POP2P_GPR64u64_GPR64u64_APX" isa-set="APX_F" opcode="8F" string="POP2P (R64, R64)">
+    <instruction asm="POP2P" category="POP" cpl="3" eosz="3" evex="1" extension="APXEVEX" iclass="POP2P" iform="POP2P_GPR64u64_GPR64u64_APX" isa-set="APX_F" no_reg_match="1" opcode="8F" string="POP2P (R64, R64)">
       <operand idx="1" name="REG0" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
       <operand idx="2" name="REG1" type="reg" w="1" width="64" xtype="u64">RAX,RCX,RDX,RBX,RBP,RSI,RDI,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25,R26,R27,R28,R29,R30,R31</operand>
       <operand idx="3" name="REG2" r="1" suppressed="1" type="reg" w="1" width="64">RSP</operand>
